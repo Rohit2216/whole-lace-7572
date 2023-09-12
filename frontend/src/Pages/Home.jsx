@@ -10,7 +10,7 @@ export default function home() {
     id: 1,
     name: "DR. Avinash Mohan Dev",
     profession: "Animal expert",
-    img: "https://media.licdn.com/dms/image/D4D03AQFRKeCpF8J1fQ/profile-displayphoto-shrink_800_800/0/1683776037836?e=1692230400&v=beta&t=eOLnvulAaOtASTCuNzk6PjbDAtUdF2k0BpU0Y91xzvM"
+    img: "https://avatars.githubusercontent.com/u/115461503?v=4"
   }, {
     id: 2,
     name: "DR. Vikram Naik",

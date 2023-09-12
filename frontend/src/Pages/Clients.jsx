@@ -9,7 +9,7 @@ export default function Clients() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const result = await fetch('https://precious-tan-binturong.cyclic.app/users/');
+        const result = await fetch('https://pet-veterinary.onrender.com/users/');
         const data = await result.json();
         console.log(data.msg);
         setRecentOrderData(data.msg);
@@ -24,7 +24,7 @@ export default function Clients() {
   const handleDelete = async (id) => {
     const clientId = id;
     try {
-      const result = await fetch(`http://localhost:8000/users/delete/${clientId}`, {
+      const result = await fetch(`https://pet-veterinary.onrender.com/users/delete/${clientId}`, {
         method: 'DELETE',
       });
 

@@ -16,7 +16,7 @@ const AdminSettingsPage = () => {
   useEffect(() => {
     const fetchOrderData = async () => {
       try {
-        const response = await fetch(`https://precious-tan-binturong.cyclic.app/users/`);
+        const response = await fetch(`https://pet-veterinary.onrender.com/users/`);
         const data = await response.json();
 
         const filteredData=data.msg.filter((el)=>el._id===clientId)
@@ -50,7 +50,7 @@ const AdminSettingsPage = () => {
     event.preventDefault();
 
     // Make API request to update admin settings
-    fetch(`https://precious-tan-binturong.cyclic.app/users/update/${clientId}`, {
+    fetch(`https://pet-veterinary.onrender.com/users/update/${clientId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',

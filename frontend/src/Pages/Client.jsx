@@ -53,7 +53,7 @@ export default function Client() {
 
 
     // connecting FE with BE
-    fetch("http://localhost:8000/users/details/", {
+    fetch("https://pet-veterinary.onrender.com/users/details/", {
       method: "POST",
       headers: {
         "Content-type": "application/json"
@@ -94,7 +94,7 @@ export default function Client() {
           />
           {/* console.log(client_name) */}
           Contact: <input
-            type="number"
+            type="tel"
             id="contact"
             value={contact}
             onChange={(e) => {

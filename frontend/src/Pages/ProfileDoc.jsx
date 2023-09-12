@@ -13,7 +13,7 @@ const ProfileDoc = () => {
   const [clientdata, setClientData] = useState([]);
 
   useEffect(() => {
-    fetch("https://precious-tan-binturong.cyclic.app/doctor/")
+    fetch("https://pet-veterinary.onrender.com/doctor/")
       .then((res) => res.json())
       .then((res) => {
         console.log(res);
@@ -22,7 +22,7 @@ const ProfileDoc = () => {
       .catch((err) => console.log(err));
   }, []);
   useEffect(() => {
-    fetch("https://precious-tan-binturong.cyclic.app/users/")
+    fetch("https://pet-veterinary.onrender.com/users/")
       .then((res) => res.json())
       .then((res) => {
         console.log(res.msg);
@@ -78,7 +78,7 @@ const ProfileDoc = () => {
                     id="removeBtn"
                     onClick={() => {                      
                       fetch(
-                        `https://precious-tan-binturong.cyclic.app/users/delete/${e._id}`,
+                        `https://pet-veterinary.onrender.com/users/delete/${e._id}`,
                         {
                           method: "DELETE",
                           headers: {

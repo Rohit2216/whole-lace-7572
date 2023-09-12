@@ -7,7 +7,7 @@ function PopularProducts() {
 	const [popularProducts,setPopularProducts]=useState([])
 	useEffect(()=>{
 		const fetchedData=async ()=>{
-			const result=await fetch(`https://precious-tan-binturong.cyclic.app/doctor/`)
+			const result=await fetch(`https://pet-veterinary.onrender.com/doctor/`)
 			const data=await result.json()
 			setPopularProducts(data)
 		}
